@@ -1,15 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int n;
-    scanf("%d",&n);
+    int n,a;
+    scanf("%d%d",&n,&a);
     if(n%2!=0)
     {
         printf("weird");
     }
-    else if(n%2==0&&n>6&&n<20)
+    else if(n%2==0&&n>20)
     {
-        printf("weird");
+        printf("not weired");
     }
     else
     {
