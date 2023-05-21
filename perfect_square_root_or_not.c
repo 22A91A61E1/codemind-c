@@ -1,13 +1,15 @@
 #include<stdio.h>
-#include<math.h>
 int main()
 {
-    int n,square;
+    int n,i;
     scanf("%d",&n);
-    square=sqrt(n);
-    if(n==square*square)
-    printf("True");
-    else
+    for(i=0;i<=n;i++)
+    {
+        if(n==i*i)
+        {
+            printf("True");
+            return 0;
+        }
+    }
     printf("False");
-    return 0;
 }
